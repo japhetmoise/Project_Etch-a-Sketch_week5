@@ -8,14 +8,41 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-   <div class="fcontainer">
-     <div>
-        yes
+    <fieldset>
 
-     </div>
-      <div>
-        yes
-      </div>
+    <legend>
+        Set properties of grids
+    </legend>
+
+    <div id="select">
+     <select id="number" onclick="changenumber();">
+       
+        <script> 
+        let data="";
+        for(let i=1;i<=16; i++)   {  
+       data= data+"<option vaue="
+        +i
+        +">"
+        +i
+        +"</option>";
+        }  
+        document.getElementById("number").innerHTML=data;
+        </script>
+         </select>
+        <label>number of grids</label>
+    </div>
+     
+     <div id="radio">
+       <input type="radio" value="Red" name="clr" onclick="changecolor()">Red
+        <input type="radio" value="Green" name="clr">Green  
+       <input type="radio" value="Blue" name="clr"> Blue 
+       </div>
+    </fieldset>
+
+  <div id="fcontainer">
+    <script> 
+    adddivs();    
+    </script>
    </div>
 </body>
 </html>

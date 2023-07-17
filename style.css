@@ -1,14 +1,41 @@
-.fcontainer {
+
+#fcontainer {    
     display: flex;
+    width: auto;
     flex-wrap: nowrap;
     background-color: DodgerBlue;
+
   }
   
-  .fcontainer > div {
+  #fcontainer > div {
     background-color: #f1f100;
-    width: 100px;
+    width: 10%;
+    height: 50px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+  }
+ #fcontainer:hover div{
+    background-color: rgb(240, 199, 110);
+    font-size: 30px;
+
+  }
+  .number{
+    width: 100px;
+    font-size: 20px;
+  }
+  #select{
+        float: left;
+        width:20%;        
+        font-size: 20;
+        font-weight: bolder;
+        background-color: rgb(247, 146, 24);
+  }
+  #radio{
+    float: left;
+    width: 50%;
+    font-size: medium;
+    color: rgb(4, 4, 185);
+    background-color: aqua;
   }
